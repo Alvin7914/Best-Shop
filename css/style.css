@@ -42,8 +42,8 @@ body {
 .top-container {
   background-color: white;
   box-shadow: 0 3px 6px var(--grey1);
-  height: 70px;
   position: sticky;
+  height: 70px;
   top: 0;
   z-index: 31415;
 }
@@ -105,13 +105,11 @@ body {
   text-decoration: none;
   color: white;
   line-height: 22px;
-  width: 440px;
-  height: 67px;
   background-color: var(--blue1);
   border-radius: 40px;
   font-weight: bold;
   text-align: center;
-  padding: 22px 0;
+  padding: 22px 157px;
 }
 
 .background-top-section {
@@ -123,13 +121,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 531px;
+  margin: 120px auto;
 }
 
 .stats-columns {
   display: flex;
   justify-content: space-around;
-  margin: 100px auto 0;
+  margin: 120px auto 0;
   width: 60vw;
 }
 
@@ -157,7 +155,6 @@ body {
   font-family: var(--font-raleway);
   font-size: 36px;
   line-height: 42px;
-  margin-top: 100px;
 }
 
 .number {
@@ -166,6 +163,7 @@ body {
   font-weight: 1000;
   line-height: 24px;
   letter-spacing: 6px;
+  padding: 10px 0;
 }
 
 .plus {
@@ -181,7 +179,159 @@ body {
 }
 
 .column-2 > .stats-text {
-  width: 150px;
+  padding: 10px 370px;
+}
+
+.benefits {
+  background-color: var(--grey3);
+  padding: 105px 0;
+}
+
+.benefits > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-benefit {
+  background-color: white;
+  border: 1px solid var(--grey4);
+  border-radius: 5px;
+  margin-bottom: 38px;
+  display: flex;
+  width: 1124px; /* mozliwe ze do zmiany, na bardziej dynamiczna szerokosc */
+}
+
+.benefit-3 {
+  display: flex;
+  width: 1124px; /* mozliwe ze do zmiany, na bardziej dynamiczna szerokosc */
+}
+
+.display-block {
+  display: block;
+}
+
+.flex-dir-row-rev {
+  flex-direction: row-reverse;
+}
+
+.macbook {
+  width: 386px;
+  height: 219px;
+  margin-top: 113px;
+  margin-bottom: 38px;
+  margin-right: 117px;
+}
+
+.iphone {
+  width: 426px;
+  height: 328px;
+  margin-top: 29px;
+  margin-bottom: 13px;
+  margin-left: 70px;
+}
+
+.bottom-right-benefit {
+  border: 1px solid var(--grey4);
+  background-color: var(--green);
+  padding: 98px 82px 64px 62px;
+  margin-left: 61px;
+  border-radius: 5px;
+  margin-bottom: 38px;
+}
+
+.benefit-title {
+  font-family: var(--font-raleway);
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.benefit-text {
+  line-height: 22px;
+}
+
+.hor-line-1::after {
+  content: "";
+  display: block;
+  width: 328px;
+  border: 4px solid var(--pink1);
+}
+
+.hor-line-2::after {
+  content: "";
+  display: block;
+  width: 328px;
+  border: 4px solid var(--blue1);
+}
+
+.hor-line-3::after {
+  content: "";
+  display: block;
+  width: 328px;
+  border: 4px solid var(--green);
+}
+
+.trumpet {
+  width: 295px;
+  height: 208px;
+  margin: auto;
+}
+
+.pricing-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing {
+  font-family: var(--font-raleway);
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.pricing-articles {
+  display: flex;
+  mar: 0 20px;
+}
+
+.pricing-article {
+  width: 370px;
+  border-radius: 18px;
+  border: 1px solid var(--pink1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-professional {
+  margin: 0 60px;
+}
+
+.pack {
+  font-family: var(--font-raleway);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 34px;
+}
+
+.price {
+  font-size: 46px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.price-basic {
+  color: var(--pink1);
+}
+
+.price-premium {
+  color: var(--green);
+}
+
+.price-info {
+  font-size: 14px;
+  line-height: 41px;
 }
 
 .sticky {
