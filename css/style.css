@@ -77,3 +77,43 @@ body {
   position: relative;
   border-bottom: 4px solid var(--blue1);
 }
+
+.front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: calc(100vh - 70px);
+}
+
+.sell-more {
+  font-family: var(--font-raleway);
+  font-size: 49px;
+  line-height: 57px;
+  margin-top: 130px;
+}
+
+.text-under-sell-more {
+  line-height: 22px;
+  margin-top: 15px;
+}
+
+.button-on-top {
+  margin-top: 40px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  line-height: 22px;
+  width: 440px;
+  height: 67px;
+  background-color: var(--blue1);
+  border-radius: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 22px 0;
+}
+
+.background-top-section {
+  position: absolute;
+  bottom: 0;
+}
