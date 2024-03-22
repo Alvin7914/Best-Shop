@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-open-sans: "Open Sans";
+  --font-raleway: "Raleway";
+  --grey1: #00000029;
+  --grey2: #a5a5a5;
+  --grey3: #f7f7f7;
+  --grey4: #e8e9ed;
+  --grey5: #95989a;
+  --grey6: #707070;
+  --blue1: #08a6e4;
+  --blue2: #07ace629;
+  --blue3: #07ace6;
+  --green: #55dfb4;
+  --pink1: #fb3b64;
+  --pink2: #eb476e;
+  --pink3: #ff091129;
+  --pink4: #f9043629;
+  --black: #13253b;
+}
+
+.container {
+  width: 1352px;
+  margin: 0 auto;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  font-family: var(--font-open-sans);
+}
+
+.top-container {
+  background-color: white;
+  box-shadow: 0 3px 6px var(--grey1);
+  height: 70px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-family: var(--font-raleway);
+  font-size: 32px;
+  color: var(--blue1);
+  line-height: 37px;
+  font-weight: 300;
+  margin-top: 2px;
+}
+
+.menu-list li {
+  display: inline-block;
+}
+
+.menu-list li button {
+  text-decoration: none;
+  color: var(--grey2);
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3.28px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  padding: 26px;
+}
+
+.menu-list li button:hover {
+  color: black;
+  position: relative;
+  border-bottom: 4px solid var(--blue1);
+}
