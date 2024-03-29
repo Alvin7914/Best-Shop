@@ -135,16 +135,52 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.stats-column > span::before {
+.stats-column div:first-child {
+  position: relative;
+}
+
+.stats-column span::before {
   content: "";
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 63px;
   height: 63px;
   border-radius: 40px;
   background: black;
   align-self: center;
+  z-index: -1;
+}
+
+.column-1 span::before {
+  background-color: var(--pink1);
+  left: -28px;
+}
+
+.column-2 span::before {
+  background-color: var(--blue1);
+  left: -21px;
+}
+
+.column-2 div:nth-of-type(2) {
+  margin-top: 3px;
+}
+
+.column-3 span::before {
+  background-color: var(--green);
+  left: -30px;
+}
+
+.column-2 img {
+  margin-top: 13px;
+}
+
+.column-3 img {
+  margin-top: 5px;
 }
 
 .stats-column > div {
@@ -202,6 +238,37 @@ body {
   width: 1124px; /* mozliwe ze do zmiany, na bardziej dynamiczna szerokosc */
 }
 
+.rectangle::before {
+  content: "";
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  background-color: var(--pink1);
+  border-radius: 41px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 75px;
+  left: 200px;
+  z-index: 1;
+}
+
+.circle::before {
+  content: "";
+  display: inline-block;
+  width: 320px;
+  height: 320px;
+  background-color: var(--blue3);
+  border-radius: 160px;
+  position: absolute;
+  top: 12px;
+  left: 70px;
+  z-index: 1;
+}
+
+.benefit__img {
+  position: relative;
+}
+
 .benefit-3 {
   display: flex;
   width: 1124px; /* mozliwe ze do zmiany, na bardziej dynamiczna szerokosc */
@@ -215,12 +282,18 @@ body {
   flex-direction: row-reverse;
 }
 
+.flex-dir-row-rev div:first-child {
+  margin-left: 192px;
+}
+
 .macbook {
   width: 386px;
   height: 219px;
   margin-top: 113px;
   margin-bottom: 38px;
   margin-right: 117px;
+  position: relative;
+  z-index: 2;
 }
 
 .iphone {
@@ -229,6 +302,8 @@ body {
   margin-top: 29px;
   margin-bottom: 13px;
   margin-left: 70px;
+  position: relative;
+  z-index: 2;
 }
 
 .bottom-right-benefit {
@@ -244,31 +319,59 @@ body {
   font-family: var(--font-raleway);
   font-size: 36px;
   line-height: 42px;
+  margin-top: 69px;
+  margin-bottom: 30px;
+  margin-left: 35px;
+}
+
+.benefit-title-1 {
+  margin-top: 90px;
+}
+
+.benefit-title-2 {
+  margin-left: 0;
+}
+
+.benefit-title-3 {
+  padding-right: 200px;
 }
 
 .benefit-text {
   line-height: 22px;
+  margin-left: 35px;
+  position: relative;
+}
+
+.benefit-title-2 + p {
+  margin-left: 0;
+}
+
+.benefit-text::after {
+  content: "";
+  display: block;
+  width: 328px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hor-line-1 {
+  padding-right: 150px;
 }
 
 .hor-line-1::after {
-  content: "";
-  display: block;
-  width: 328px;
   border: 4px solid var(--pink1);
+  bottom: -70px;
 }
 
 .hor-line-2::after {
-  content: "";
-  display: block;
-  width: 328px;
   border: 4px solid var(--blue1);
+  bottom: -60px;
 }
 
 .hor-line-3::after {
-  content: "";
-  display: block;
-  width: 328px;
   border: 4px solid var(--green);
+  bottom: -60px;
 }
 
 .trumpet {
@@ -281,17 +384,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .pricing {
   font-family: var(--font-raleway);
   font-size: 36px;
   line-height: 42px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .pricing-articles {
   display: flex;
-  mar: 0 20px;
+  margin: 0 20px;
+  align-items: center;
 }
 
 .pricing-article {
@@ -304,7 +411,24 @@ body {
 }
 
 .article-professional {
+  width: 405px;
+  border-color: var(--blue3);
+  box-shadow: 5px 10px 27px var(--blue2);
   margin: 0 60px;
+}
+
+.article-premium {
+  border-color: var(--green);
+}
+
+.pricing-article > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-professional > ul * {
+  padding: 25px;
 }
 
 .pack {
@@ -318,6 +442,22 @@ body {
   font-size: 46px;
   font-weight: 300;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.price-basic {
+  margin-bottom: 60px;
+}
+
+.price-professional {
+  color: var(--blue3);
+}
+
+.limited-offer {
+  font-family: var(--font-raleway);
+  font-size: 12px;
+  color: var(--black);
+  font-weight: bold;
   margin-bottom: 60px;
 }
 
@@ -331,7 +471,15 @@ body {
 
 .price-info {
   font-size: 14px;
-  line-height: 41px;
+  padding: 20px;
+}
+
+.price-info::before {
+  content: "";
+  background-image: url("../images/Checkmark-1.svg");
+  display: inline-block;
+  width: 11px;
+  height: 11px;
 }
 
 .sticky {

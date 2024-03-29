@@ -48,8 +48,10 @@
       <h2 class="stats-header">The most popular sales platform in country</h2>
       <div class="stats-columns">
         <article class="stats-column column-1">
-          <img src="images/Person.svg" alt="Person" />
-          <span></span>
+          <div>
+            <img src="images/Person.svg" alt="Person" />
+            <span></span>
+          </div>
           <div>
             <p class="number">100000</p>
             <p class="number plus">+</p>
@@ -57,8 +59,10 @@
           <p class="stats-text">daily entries</p>
         </article>
         <article class="stats-column column-2">
-          <img src="images/Eye.svg" alt="Person" />
-          <span></span>
+          <div>
+            <img src="images/Eye.svg" alt="Person" />
+            <span></span>
+          </div>
           <div>
             <p class="number">2000000</p>
             <p class="number plus">+</p>
@@ -66,8 +70,10 @@
           <p class="stats-text">seen products every day</p>
         </article>
         <article class="stats-column column-3">
-          <img src="images/Catalog.svg" alt="Person" />
-          <span></span>
+          <div>
+            <img src="images/Catalog.svg" alt="Person" />
+            <span></span>
+          </div>
           <div>
             <p class="number">10000</p>
             <p class="number plus">+</p>
@@ -80,29 +86,39 @@
       <div class="container">
         <div class="single-benefit">
           <div>
-            <h3 class="benefit-title">Be always first</h3>
+            <h3 class="benefit-title benefit-title-1">Be always first</h3>
             <p class="benefit-text hor-line-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
-          <img src="images/Macbook.png" alt="Macbook" class="macbook" />
+          <div class="benefit__img">
+            <img src="images/Macbook.png" alt="Macbook" class="macbook" />
+            <span class="rectangle"></span>
+          </div>
         </div>
         <div class="single-benefit flex-dir-row-rev">
           <div>
-            <h3 class="benefit-title">Your shop is where you are!</h3>
+            <h3 class="benefit-title benefit-title-2">
+              Your shop is where you are!
+            </h3>
             <p class="benefit-text hor-line-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
-          <img src="images/iPhone.png" alt="iPhone" class="iphone" />
+          <div class="benefit__img">
+            <img src="images/iPhone.png" alt="iPhone" class="iphone" />
+            <span class="circle"></span>
+          </div>
         </div>
         <div class="benefit-3">
           <div class="single-benefit display-block">
-            <h3 class="benefit-title">Increase recognition your brand!</h3>
+            <h3 class="benefit-title benefit-title-3">
+              Increase recognition your brand!
+            </h3>
             <p class="benefit-text hor-line-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -120,32 +136,41 @@
       <div class="pricing-articles">
         <article class="pricing-article">
           <h4 class="pack">Basic</h4>
-          <p class="price price-basic">$0</p>
-          <p class="price-info info-memory">100 MB HDD</p>
-          <p class="price-info info-subdomain">1 Subdomain</p>
-          <p class="price-info info-e-mails">2 E-mails</p>
-          <p class="price-info info-license">Two years license</p>
-          <p class="price-info info-support">Full support</p>
+          <div class="price price-basic">$0</div>
+          <ul>
+            <li class="price-info info-memory">100 MB HDD</li>
+            <li class="price-info info-subdomain">1 Subdomain</li>
+            <li class="price-info info-e-mails">2 E-mails</li>
+            <li class="price-info info-license">Two years license</li>
+            <li class="price-info info-support">Full support</li>
+          </ul>
+          <a class="pricing-button" href="/">Begin</a>
         </article>
         <article class="pricing-article article-professional">
           <h4 class="pack">Professional</h4>
-          <p class="price price-professional">$25</p>
-          <p class="limited-offer">Limited offer</p>
-          <p class="price-info info-memory">500 MB HDD</p>
-          <p class="price-info info-subdomain">2 Subdomains</p>
-          <p class="price-info info-e-mails">5 E-mails</p>
-          <p class="price-info info-license">One year license</p>
-          <p class="price-info info-support">Full support</p>
+          <div class="price price-professional">$25</div>
+          <div class="limited-offer">Limited offer</div>
+          <ul>
+            <li class="price-info info-memory">500 MB HDD</li>
+            <li class="price-info info-subdomain">2 Subdomains</li>
+            <li class="price-info info-e-mails">5 E-mails</li>
+            <li class="price-info info-license">One year license</li>
+            <li class="price-info info-support">Full support</li>
+          </ul>
+          <a class="pricing-button" href="/">Begin</a>
         </article>
-        <article class="pricing-article">
+        <article class="pricing-article article-premium">
           <h4 class="pack">Premium</h4>
-          <p class="price price-premium">$60</p>
-          <p class="limited-offer">Limited offer</p>
-          <p class="price-info info-memory">2 GB HDD</p>
-          <p class="price-info info-subdomain">5 Subdomains</p>
-          <p class="price-info info-e-mails">20 E-mails</p>
-          <p class="price-info info-license">Two years license</p>
-          <p class="price-info info-support">Full support</p>
+          <div class="price price-premium">$60</div>
+          <div class="limited-offer">Limited offer</div>
+          <ul>
+            <li class="price-info info-memory">2 GB HDD</li>
+            <li class="price-info info-subdomain">5 Subdomains</li>
+            <li class="price-info info-e-mails">20 E-mails</li>
+            <li class="price-info info-license">Two years license</li>
+            <li class="price-info info-support">Full support</li>
+          </ul>
+          <a class="pricing-button" href="/">Begin</a>
         </article>
       </div>
     </section>
